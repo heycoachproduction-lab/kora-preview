@@ -112,18 +112,18 @@ p,li{text-wrap:pretty}
 .vh{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 .hero{position:relative;padding:150px 0 92px;overflow:hidden;background:var(--bg)}
-.hero__aura{position:absolute;left:50%;top:270px;width:1180px;height:700px;transform:translateX(-50%);
+.hero__aura{position:absolute;left:50%;top:238px;width:1240px;height:720px;transform:translateX(-50%);
   background:radial-gradient(closest-side,rgba(16,185,129,.085),rgba(16,185,129,.02) 46%,transparent 72%);
   pointer-events:none;filter:blur(14px)}
 .stage{position:relative;width:1140px;max-width:100%;margin:0 auto;aspect-ratio:1140/700}
-.stage__core{position:absolute;left:50%;top:48%;width:46%;
+.stage__core{position:absolute;left:50%;top:44%;width:50%;
   transform:translate(-50%,-50%);animation:float 11s ease-in-out infinite;will-change:transform}
 .stage__core img{width:100%;filter:drop-shadow(0 46px 60px rgba(0,0,0,.85))}
 @keyframes float{0%,100%{transform:translate(-50%,calc(-50% - 8px))}50%{transform:translate(-50%,calc(-50% + 8px))}}
-.stage__shadow{position:absolute;left:50%;top:80%;width:34%;height:44px;transform:translateX(-50%);
+.stage__shadow{position:absolute;left:50%;top:78%;width:37%;height:46px;transform:translateX(-50%);
   background:radial-gradient(closest-side,rgba(0,0,0,.85),transparent 74%);
   animation:shd 11s ease-in-out infinite}
-@keyframes shd{0%,100%{opacity:.45;width:34%}50%{opacity:.68;width:36.5%}}
+@keyframes shd{0%,100%{opacity:.45;width:37%}50%{opacity:.68;width:39.5%}}
 
 .rays{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 .rays .base{stroke:var(--acc);stroke-width:.6;opacity:.16;fill:none}
@@ -135,13 +135,16 @@ p,li{text-wrap:pretty}
 .rays .p4{animation-delay:3.3s}.rays .p5{animation-delay:4.4s}.rays .p6{animation-delay:5.5s}
 @media(prefers-reduced-motion:reduce){.rays .pulse,.stage__core,.stage__shadow{animation:none}}
 
-.ray{position:absolute;max-width:272px}
-.ray b{display:block;font-size:18px;line-height:24px;font-weight:600;color:var(--tx);
-  letter-spacing:-.022em;margin-bottom:7px}
-.ray span{display:block;font-size:15px;line-height:22px;letter-spacing:-.008em;color:#a8b0ac}
+.ray{position:absolute;max-width:240px}
+.ray:before{content:"";display:block;width:26px;height:1px;background:var(--acc);opacity:.55;
+  margin-bottom:14px}
+.ray--l:before{margin-left:auto}
+.ray b{display:block;font-size:15.5px;line-height:21px;font-weight:600;color:var(--tx);
+  letter-spacing:-.022em;margin-bottom:6px}
+.ray span{display:block;font-size:13.5px;line-height:20px;letter-spacing:-.005em;color:#9ea6a2}
 .ray--l{text-align:right}
-.r1{left:0;top:8%}.r2{left:0;top:31%}.r3{left:0;top:52%}
-.r4{right:0;top:8%}.r5{right:0;top:31%}.r6{right:0;top:52%}
+.r1{left:0;top:10%}.r2{left:0;top:32%}.r3{left:0;top:54%}
+.r4{right:0;top:10%}.r5{right:0;top:32%}.r6{right:0;top:54%}
 .hero__keys{display:none}
 
 .mark{margin:0;text-align:center;font-weight:200;letter-spacing:.08em;
@@ -159,7 +162,7 @@ p,li{text-wrap:pretty}
 .btn--g{border:1px solid var(--hair-2);color:var(--tx)}
 .btn--g:hover{border-color:var(--tx-3)}
 
-.vcard{position:absolute;left:0;bottom:2%;width:262px;border-radius:14px;overflow:hidden;
+.vcard{position:absolute;left:0;bottom:0;width:214px;border-radius:14px;overflow:hidden;
   border:1px solid var(--hair);background:rgba(10,12,11,.86);
   -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);text-align:left;padding:0;display:block;
   transition:border-color .3s ease,transform .3s ease}
@@ -167,10 +170,10 @@ p,li{text-wrap:pretty}
 .vthumb{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#0b0d0c}
 .vthumb img{width:100%;height:100%;object-fit:cover;opacity:.66}
 .vplay{position:absolute;inset:0;display:grid;place-items:center}
-.vplay span{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.95);
+.vplay span{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.95);
   display:grid;place-items:center;color:#000;font-size:11px;padding-left:3px}
-.vmeta{display:block;padding:11px 13px 13px}
-.vmeta b{display:block;font-size:12.5px;line-height:17px;font-weight:600}
+.vmeta{display:block;padding:10px 11px 12px}
+.vmeta b{display:block;font-size:11.5px;line-height:16px;font-weight:600}
 .vmeta i{display:block;font-style:normal;font-family:var(--mono);font-size:10px;
   letter-spacing:.18em;text-transform:uppercase;color:var(--tx-3);margin-top:6px}
 
@@ -212,15 +215,15 @@ p,li{text-wrap:pretty}
 
     <svg class="rays" viewBox="0 0 1140 700" preserveAspectRatio="none" aria-hidden="true">
       <g>
-        <path class="base" d="M395 227 L272 96"/><path class="pulse p1" d="M395 227 L272 96"/>
-        <path class="base" d="M312 305 L272 258"/><path class="pulse p2" d="M312 305 L272 258"/>
-        <path class="base" d="M373 422 L272 404"/><path class="pulse p3" d="M373 422 L272 404"/>
-        <path class="base" d="M785 227 L868 96"/><path class="pulse p4" d="M785 227 L868 96"/>
-        <path class="base" d="M828 290 L868 258"/><path class="pulse p5" d="M828 290 L868 258"/>
-        <path class="base" d="M749 422 L868 404"/><path class="pulse p6" d="M749 422 L868 404"/>
-        <circle class="node" cx="395" cy="227" r="2"/><circle class="node" cx="312" cy="305" r="2"/>
-        <circle class="node" cx="373" cy="422" r="2"/><circle class="node" cx="785" cy="227" r="2"/>
-        <circle class="node" cx="828" cy="290" r="2"/><circle class="node" cx="749" cy="422" r="2"/>
+        <path class="base" d="M380 190 L244 122"/><path class="pulse p1" d="M380 190 L244 122"/>
+        <path class="base" d="M290 274 L244 276"/><path class="pulse p2" d="M290 274 L244 276"/>
+        <path class="base" d="M356 401 L244 430"/><path class="pulse p3" d="M356 401 L244 430"/>
+        <path class="base" d="M804 190 L896 122"/><path class="pulse p4" d="M804 190 L896 122"/>
+        <path class="base" d="M850 245 L896 276"/><path class="pulse p5" d="M850 245 L896 276"/>
+        <path class="base" d="M765 401 L896 430"/><path class="pulse p6" d="M765 401 L896 430"/>
+        <circle class="node" cx="380" cy="190" r="2"/><circle class="node" cx="290" cy="274" r="2"/>
+        <circle class="node" cx="356" cy="401" r="2"/><circle class="node" cx="804" cy="190" r="2"/>
+        <circle class="node" cx="850" cy="245" r="2"/><circle class="node" cx="765" cy="401" r="2"/>
       </g>
     </svg>
 
@@ -252,12 +255,12 @@ p,li{text-wrap:pretty}
 </header>
 <style>
 .mis{background:var(--bg);color:var(--tx);padding:112px 0 120px;position:relative}
-.mis:before{content:"";position:absolute;top:-104px;left:50%;transform:translateX(-50%);
-  width:1px;height:196px;
-  background:linear-gradient(180deg,rgba(16,185,129,0),rgba(16,185,129,.7) 46%,rgba(16,185,129,0));
+.mis:before{content:"";position:absolute;top:-18px;left:50%;transform:translateX(-50%);
+  width:1px;height:118px;
+  background:linear-gradient(180deg,rgba(16,185,129,.55),rgba(16,185,129,0));
   animation:descend 3.6s ease-in-out infinite}
-@keyframes descend{0%,100%{opacity:.3;transform:translateX(-50%) translateY(-8px)}
-  50%{opacity:1;transform:translateX(-50%) translateY(8px)}}
+@keyframes descend{0%,100%{opacity:.28;transform:translateX(-50%) translateY(-6px)}
+  50%{opacity:.85;transform:translateX(-50%) translateY(6px)}}
 @media(prefers-reduced-motion:reduce){.mis:before{animation:none;opacity:.6}}
 .mis__c{max-width:var(--max);margin:0 auto;padding:0 var(--gut);text-align:center}
 .mis__h{margin:0 auto;font-size:clamp(30px,3.6vw,52px);line-height:1.07;font-weight:300;
