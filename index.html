@@ -135,13 +135,13 @@ p,li{text-wrap:pretty}
 .rays .p4{animation-delay:3.3s}.rays .p5{animation-delay:4.4s}.rays .p6{animation-delay:5.5s}
 @media(prefers-reduced-motion:reduce){.rays .pulse,.stage__core,.stage__shadow{animation:none}}
 
-.ray{position:absolute;max-width:212px}
-.ray b{display:block;font-size:13px;line-height:18px;font-weight:600;color:var(--tx);
-  letter-spacing:-.01em;margin-bottom:3px}
-.ray span{display:block;font-size:12.5px;line-height:18px;color:var(--tx-2)}
+.ray{position:absolute;max-width:272px}
+.ray b{display:block;font-size:18px;line-height:24px;font-weight:600;color:var(--tx);
+  letter-spacing:-.022em;margin-bottom:7px}
+.ray span{display:block;font-size:15px;line-height:22px;letter-spacing:-.008em;color:#a8b0ac}
 .ray--l{text-align:right}
-.r1{left:0;top:11%}.r2{left:0;top:33%}.r3{left:0;top:55%}
-.r4{right:0;top:11%}.r5{right:0;top:33%}.r6{right:0;top:55%}
+.r1{left:0;top:8%}.r2{left:0;top:31%}.r3{left:0;top:52%}
+.r4{right:0;top:8%}.r5{right:0;top:31%}.r6{right:0;top:52%}
 .hero__keys{display:none}
 
 .mark{margin:0;text-align:center;font-weight:200;letter-spacing:.08em;
@@ -180,9 +180,10 @@ p,li{text-wrap:pretty}
   .stage__shadow,.rays,.ray{display:none}
   .hero__keys{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:34px 20px 0;
     background:var(--hair);border:1px solid var(--hair)}
-  .hero__keys div{background:var(--bg);padding:16px 16px 18px}
-  .hero__keys b{display:block;font-size:12.5px;font-weight:600;margin-bottom:4px}
-  .hero__keys span{font-size:12px;line-height:18px;color:var(--tx-2)}
+  .hero__keys div{background:var(--bg);padding:18px 18px 20px}
+  .hero__keys b{display:block;font-size:15.5px;line-height:21px;font-weight:600;
+    letter-spacing:-.02em;margin-bottom:6px}
+  .hero__keys span{font-size:13.5px;line-height:20px;color:#a8b0ac}
   .vcard{position:static;width:auto;max-width:290px;margin:22px auto 0}
 }
 @media(max-width:600px){.hero{padding:118px 0 64px}.hero__keys{grid-template-columns:1fr}}
@@ -211,12 +212,12 @@ p,li{text-wrap:pretty}
 
     <svg class="rays" viewBox="0 0 1140 700" preserveAspectRatio="none" aria-hidden="true">
       <g>
-        <path class="base" d="M395 227 L228 107"/><path class="pulse p1" d="M395 227 L228 107"/>
-        <path class="base" d="M312 305 L228 261"/><path class="pulse p2" d="M312 305 L228 261"/>
-        <path class="base" d="M373 422 L228 415"/><path class="pulse p3" d="M373 422 L228 415"/>
-        <path class="base" d="M785 227 L912 107"/><path class="pulse p4" d="M785 227 L912 107"/>
-        <path class="base" d="M828 290 L912 261"/><path class="pulse p5" d="M828 290 L912 261"/>
-        <path class="base" d="M749 422 L912 415"/><path class="pulse p6" d="M749 422 L912 415"/>
+        <path class="base" d="M395 227 L272 96"/><path class="pulse p1" d="M395 227 L272 96"/>
+        <path class="base" d="M312 305 L272 258"/><path class="pulse p2" d="M312 305 L272 258"/>
+        <path class="base" d="M373 422 L272 404"/><path class="pulse p3" d="M373 422 L272 404"/>
+        <path class="base" d="M785 227 L868 96"/><path class="pulse p4" d="M785 227 L868 96"/>
+        <path class="base" d="M828 290 L868 258"/><path class="pulse p5" d="M828 290 L868 258"/>
+        <path class="base" d="M749 422 L868 404"/><path class="pulse p6" d="M749 422 L868 404"/>
         <circle class="node" cx="395" cy="227" r="2"/><circle class="node" cx="312" cy="305" r="2"/>
         <circle class="node" cx="373" cy="422" r="2"/><circle class="node" cx="785" cy="227" r="2"/>
         <circle class="node" cx="828" cy="290" r="2"/><circle class="node" cx="749" cy="422" r="2"/>
