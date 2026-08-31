@@ -591,6 +591,15 @@ p,li{text-wrap:pretty}
 
 .works__gateline{max-width:640px;margin:22px auto 0;padding:0 var(--gut);text-align:center;
   font-size:15.5px;line-height:25px;color:var(--tx-2)}
+.send{margin-top:64px;padding-top:34px;border-top:1px solid var(--hair)}
+.send__t{margin:14px 0 0;font-size:clamp(21px,2.3vw,31px);line-height:1.18;font-weight:300;
+  letter-spacing:-.026em}
+.send__t b{font-weight:600}
+.send__row{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.send__row span{height:32px;display:inline-flex;align-items:center;padding:0 14px;border-radius:9999px;
+  border:1px solid var(--hair-2);font-size:13px;color:var(--tx-2)}
+.send__n{margin:18px 0 0;font-size:14.5px;line-height:23px;color:var(--tx-3);max-width:62ch}
+@media(max-width:820px){.send{margin-top:44px}}
 </style>
 <section class="works sec--dark" id="works">
   <div class="works__c">
@@ -616,6 +625,19 @@ p,li{text-wrap:pretty}
       <span class="mq__i">Calendly</span><span class="mq__i">Jobber</span><span class="mq__i">ServiceTitan</span>
     </div></div>
     <p class="works__gateline">These are examples of tools businesses already use. They do not imply partnership, certification or endorsement — and they are not a promise that every connection shown is already supported. KORA only claims an integration after that exact capability has been tested.</p>
+  </div>
+
+  <div class="works__c">
+    <div class="send rv">
+      <p class="kick">Send to KORA</p>
+      <p class="send__t">Work wherever you want.<br><b>When it matters to the business — send it to me.</b></p>
+      <div class="send__row">
+        <span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Documents</span>
+        <span>Websites</span><span>Email &amp; chats</span>
+      </div>
+      <p class="send__n">I keep where it came from, work out what it actually means for the business, and I do not
+        turn it into approved truth on my own.</p>
+    </div>
   </div>
 </section>
 
